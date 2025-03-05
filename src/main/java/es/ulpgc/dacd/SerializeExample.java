@@ -4,7 +4,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 public class SerializeExample {
     public static void main(String[] args) {
-        Person person = new Person("Alice", 30);
+        Person person = new Person("Alice", 32);
         try (ObjectOutputStream oos = new ObjectOutputStream(new
                 FileOutputStream("person.ser"))) {
             oos.writeObject(person);
