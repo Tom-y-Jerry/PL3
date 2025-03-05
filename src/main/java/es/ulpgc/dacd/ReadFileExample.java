@@ -13,6 +13,14 @@ public class ReadFileExample {
         // Leer archivo con ISO-8859-1
         String contentIso = Files.readString(filePath, Charset.forName("ISO8859-1"));
         System.out.println("Contenido (ISO-8859-1):\n" + contentIso);
+        // Leer archivo con UTF-16LE
+        String contentUtf16LE = Files.readString(filePath,
+                Charset.forName("UTF-16LE"));
+        System.out.println("Contenido (UTF-16LE):\n" + contentUtf16LE);
+        // Leer archivo con UTF-16BE
+        String contentUtf16BE = Files.readString(filePath,
+                Charset.forName("UTF-16BE"));
+        System.out.println("Contenido (UTF-16BE):\n" + contentUtf16BE);
     }
 
 }
