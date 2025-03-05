@@ -7,7 +7,7 @@ public class SerializeExample {
         Person person = new Person("Alice", 32);
         try (ObjectOutputStream oos = new ObjectOutputStream(new
                 FileOutputStream("person.ser"))) {
-            oos.writeObject(person);
+            oos.writeObject(person); //oos Object output stream
             System.out.println("Objeto serializado: " + person);
         } catch (Exception e) {
             e.printStackTrace();
